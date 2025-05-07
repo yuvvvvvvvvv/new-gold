@@ -1,0 +1,28 @@
+textblob
+python-dateutil>=2.8.2
+pytz>=2023.3
+numpy>=1.24.3
+pandas>=2.0.2
+scikit-learn>=1.2.2
+
+# Trading & Technical Analysis
+MetaTrader5>=5.0.45
+TA-Lib>=0.4.26
+vectorbt>=0.24.3
+
+# Deep Learning & NLP
+tensorflow>=2.12.0
+torch>=2.0.1
+transformers>=4.30.2
+newsapi-python>=0.2.7
+
+# Async & Web
+aiohttp>=3.8.4
+asyncio>=3.4.3
+
+# Visualization & Dashboard
+plotly>=5.15.0
+streamlit>=1.24.0
+
+# Utilities
+python-telegram-bot>=20.3
