@@ -1,0 +1,48 @@
+2025-05-08 05:50:48,998 - INFO - Loaded configuration
+2025-05-08 05:50:48,999 - ERROR - Error in prepare_training_data: DataFetcher.__init__() takes 1 positional argument but 2 were given
+2025-05-08 05:50:48,999 - ERROR - Error in main: DataFetcher.__init__() takes 1 positional argument but 2 were given
+2025-05-08 05:52:02,817 - INFO - Loaded configuration
+2025-05-08 05:52:02,817 - ERROR - Error in prepare_training_data: 'DataFetcher' object has no attribute 'setup_mt5'
+2025-05-08 05:52:02,817 - ERROR - Error in main: 'DataFetcher' object has no attribute 'setup_mt5'
+2025-05-08 05:53:59,820 - INFO - Loaded configuration
+2025-05-08 05:53:59,847 - ERROR - Error setting up MetaTrader5: name 'SYMBOL' is not defined
+2025-05-08 05:53:59,870 - ERROR - Error in prepare_training_data: name 'NEWS_API_KEY' is not defined
+2025-05-08 05:53:59,870 - ERROR - Error in main: name 'NEWS_API_KEY' is not defined
+2025-05-08 05:59:04,486 - INFO - Loaded configuration
+2025-05-08 05:59:04,511 - ERROR - Error setting up MetaTrader5: name 'SYMBOL' is not defined
+2025-05-08 05:59:04,526 - ERROR - Error in prepare_training_data: 'DataFetcher' object has no attribute 'fetch_historical_data'
+2025-05-08 05:59:04,526 - ERROR - Error in main: 'DataFetcher' object has no attribute 'fetch_historical_data'
+2025-05-08 06:01:44,720 - INFO - Loaded configuration
+2025-05-08 06:01:44,739 - ERROR - Error setting up MetaTrader5: name 'SYMBOL' is not defined
+2025-05-08 06:01:44,757 - ERROR - Error in prepare_training_data: 'DataFetcher' object has no attribute 'fetch_historical_data'
+2025-05-08 06:01:44,757 - ERROR - Error in main: 'DataFetcher' object has no attribute 'fetch_historical_data'
+2025-05-08 06:04:32,906 - INFO - Loaded configuration
+2025-05-08 06:04:32,922 - ERROR - Error setting up MetaTrader5: name 'SYMBOL' is not defined
+2025-05-08 06:04:32,947 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:04:32,951 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:04:32,951 - ERROR - Error in main: No historical data for XAUUSD M5
+2025-05-08 06:14:53,136 - INFO - Loaded configuration
+2025-05-08 06:14:53,158 - ERROR - Error setting up MetaTrader5: name 'SYMBOL' is not defined
+2025-05-08 06:14:53,179 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:14:53,181 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:14:53,181 - ERROR - Error in main: No historical data for XAUUSD M5
+2025-05-08 06:17:17,476 - INFO - Loaded configuration
+2025-05-08 06:17:17,476 - ERROR - Error setting up MetaTrader5: invalid literal for int() with base 10: 'yuvrajx098'
+2025-05-08 06:17:17,496 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:17:17,500 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:17:17,500 - ERROR - Error in main: No historical data for XAUUSD M5
+2025-05-08 06:26:11,510 - INFO - Loaded configuration
+2025-05-08 06:26:11,752 - ERROR - Failed to initialize MetaTrader5
+2025-05-08 06:26:11,763 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:26:11,767 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:26:11,767 - ERROR - Error in main: No historical data for XAUUSD M5
+2025-05-08 06:28:13,865 - INFO - Loaded configuration
+2025-05-08 06:28:13,885 - ERROR - Failed to initialize MetaTrader5
+2025-05-08 06:28:13,885 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:28:13,885 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:28:13,885 - ERROR - Error in main: No historical data for XAUUSD M5
+2025-05-08 06:30:28,555 - INFO - Loaded configuration
+2025-05-08 06:30:28,576 - ERROR - Failed to initialize MetaTrader5
+2025-05-08 06:30:28,576 - ERROR - No data returned for XAUUSD M5
+2025-05-08 06:30:28,576 - ERROR - Error in prepare_training_data: No historical data for XAUUSD M5
+2025-05-08 06:30:28,576 - ERROR - Error in main: No historical data for XAUUSD M5

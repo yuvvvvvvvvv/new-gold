@@ -1,0 +1,120 @@
+# Trading Bot Configuration
+
+# MT5 Connection Settings
+mt5:
+  credentials:
+    login: "1000633018"
+    password: "TfC_Mo7y"
+    server: "MetaQuotes-Demo"
+  connection:
+    timeout: 60  # Connection timeout in seconds
+    retry_interval: 5  # Retry interval in seconds
+    max_retries: 3
+  symbol:
+    name: "XAU"  # Gold symbol
+    timeframe: "5M"  # 5-minute timeframe
+    point_value: 0.01
+    contract_size: 100
+    margin_rate: 0.05
+
+# API Keys and External Services
+apis:
+  news:
+    provider: "newsapi"
+    api_key: "6d982cfcfb2c44448987450cad3b404a"
+    update_interval: 300  # Update interval in seconds
+  economic_calendar:
+    provider: "forexfactory"
+    importance_filter: ["high", "medium"]
+  telegram:
+    token: "7928421988:AAGsDv7ciorTOW8u56JTx1OOgHdsGsN9odU"
+    chat_id: "6868805694"
+  fred:
+    api_key: "47d7075813609028d8306304293b5958"
+    economic_indicators:
+      - "UNRATE"  # Unemployment Rate
+      - "INDPRO"  # Industrial Production Index
+
+# Trading Parameters
+trading:
+  risk_management:
+    max_risk_per_trade: 0.02  # 2% max risk per trade
+    max_daily_drawdown: 0.05  # 5% max daily drawdown
+    max_position_size: 5.0  # Maximum position size in lots
+    trailing_stop: true
+  schedule:
+    trading_hours:
+      start: "00:00"
+      end: "23:59"
+    session_breaks:
+      - start: "22:00"
+        end: "22:05"
+  execution:
+    slippage_tolerance: 3  # Maximum allowed slippage in points
+    retry_attempts: 3
+    timeout: 10  # Execution timeout in seconds
+  circuit_breakers:
+    volatility_threshold: 0.03  # 3% threshold
+    max_consecutive_losses: 3
+    max_daily_trades: 20
+
+# Technical Indicators
+indicators:
+  moving_averages:
+    ema_fast: 50
+    ema_slow: 200
+    ma_method: "EMA"  # EMA, SMA, WMA
+  oscillators:
+    rsi:
+      period: 14
+      overbought: 70
+      oversold: 30
+    adx:
+      period: 14
+      threshold: 25
+  volatility:
+    bollinger_bands:
+      period: 20
+      std_dev: 2
+    atr:
+      period: 14
+      multiplier: 2
+  fibonacci:
+    levels: [0.236, 0.382, 0.5, 0.618, 0.786]
+    use_high_low: true
+
+# AI Model Parameters
+ai_model:
+  lstm:
+    sequence_length: 100
+    units: 50
+    layers: 2
+    dropout: 0.2
+    epochs: 100
+    batch_size: 32
+    validation_split: 0.2
+  features:
+    price: ["close", "high", "low", "open"]
+    volume: ["volume"]
+    technical: ["rsi", "macd", "adx", "bb_upper", "bb_lower"]
+    market: ["spread", "market_depth"]
+  training:
+    optimizer: "adam"
+    loss: "mean_squared_error"
+    early_stopping_patience: 10
+    reduce_lr_patience: 5
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file:
+    path: "trading_bot.log"
+    max_size: 10485760  # 10MB
+    backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  handlers:
+    file: true
+    console: true
+    telegram: true
+
+FRED_API_KEY: "47d7075813609028d8306304293b5958"
